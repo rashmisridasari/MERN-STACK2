@@ -6,13 +6,38 @@ body{
     display:flex;
     justify-content: center;
     align-items: center;
+    background: #DAE2F8;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #D6A4A4, #DAE2F8);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #D6A4A4, #DAE2F8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
+
 .login-form{
+    border-radius: 6px;
     background-color:#f6e4ff;
-    height: 40vh;
-    width: 55vw;
+    height: 45vh;
+    width: 60vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap:1.5rem;
+}
+
+.login-input{
+    border-radius: 4px;
+    padding:1rem;
+    padding-inline: 1rem;
+    width: 80%;
+    outline: none;
+    border: 0px;
+
+}
+
+.login-btn{
+    border-radius: 4px;
+    padding: 1rem;
+    width: 85%;
+    border:0px;
+    background-color:#f5f5f7;
 }
