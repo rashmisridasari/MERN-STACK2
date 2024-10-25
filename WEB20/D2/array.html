@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+</head>
+<body>
+    <script>
+    console.log("Hello");
+    alert("Hello")
+     
+    let x="Hi";
+    console.log(x);
+    x=30 
+    console.log(x);
+    x=false
+    console.log(x);
+    x=null
+    console.log(x);
+    x=undefined
+    console.log(x);
+    let obj={
+        name:"a",
+        loc:"b",
+        age:200,
+        isalive:false
+    }
+    let obj2={
+        name:"a1",
+        loc:"b1",
+        age:0,
+        isalive:true
+    }
+    console.log(obj2.name);
+    const {name,loc,age,isalive} = obj2
+    console.log(name)
+    // console.log(obj,obj2);
+    let arr = ["a",obj,x,obj2]
+    console.log(arr);
+    let arr2 = [1,2,3,4,5,6];
+    console.log(arr2);
+    let arr3=[arr,"ewtr",arr2];
+    let arr4=[...arr,"ewtr",...arr2];
+    console.log(arr3);
+    console.log(arr4);
+    //myfunction
+
+</script>
+
+</body>
+
+</html>
