@@ -9,37 +9,29 @@
 </head>
 
 <body>
-    <form action="" class="login-form">
-        <input type="email" name=""  class="login-input" id="myclass" placeholder="email" required />
-        <input type="password" name=""  class="login-input" id="" placeholder="password" required />
+    <form  class="login-form" onsubmit="login(event)">
+        <input type="email" name=""  class="login-input" id="email" placeholder="email" required />
+        <input type="password" name=""  class="login-input" id="password" placeholder="password" required />
         <input type="submit" class="login-btn" value="Login"/>
     </form>
+    <!-- <button class=""login-btn onclick="myfunction()">Click</button> -->
 </body>
 
     <script>
-        console.log("Hello");
-        alert("Hello")
-         
-        let x="Hi";
-        console.log(x);
-        x=30 
-        console.log(x);
-        x=false
-        console.log(x);
-        x=null
-        console.log(x);
-        x=undefined
-        console.log(x);
-        let obj={name:"a",
-            loc:"b",
-            age:200,
-            isalive:false
+        
+        function myfunction() {
+            console.error("hello")
+            console.warn("hello bhai")
         }
-        let obj2={name:"a2",
-            loc:"b2",
-            age:0,
-            isalive:true
+        myfunction()
+
+        function login(event) {
+            event.preventDefault()
+            let email=document.getElementById('email').value;
+            let password=document.getElementById('password').value;
+            console.log("login:"+email+""+password);
+
         }
     </script>
 
-</html>
+</html> 
