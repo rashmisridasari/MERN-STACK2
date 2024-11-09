@@ -4,20 +4,25 @@ import Contact from './pages/Contact'
 import Products from './pages/Products'
 import WebLayout from './layout/WebLayout'
 import AdminLayout from './layout/AdminLayout'
-import AdminDashboard from './pages/Admin/AdminDashBoard'
+import AdminDashboard from './pages/Admin/AdminDashboard'
+import TwClasses from './pages/TwClasses'
+import AdminProducts from './pages/Admin/AdminProducts'
 // import {} from 'react'
 const App = () => {
     return (
         <>
             <BrowserRouter>
                 <Routes>
-                    <Route element  = {<WebLayout />}>
-                        <Route path = '/' element={<Home />} />
-                        <Route path = '/products' element={<Products />} />
-                        <Route path = '/contact' element={<Contact />} />
+                    <Route element={<WebLayout />}>
+                        <Route path='/' element={<Home />} />
+                        <Route path='/products' element={<Products />} />
+                        <Route path='/contact' element={<Contact />} />
+                        <Route path='/temp' element={<TwClasses />}/>
                     </Route>
                     <Route element={<AdminLayout />}>
                         <Route path='/admin/dashboard' element={<AdminDashboard/>} />
+                        <Route path='/admin/products' element={<AdminProducts/>} />
+                    
                     </Route>
                 </Routes>
             </BrowserRouter>

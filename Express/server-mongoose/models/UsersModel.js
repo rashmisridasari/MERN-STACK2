@@ -8,17 +8,16 @@ const UsersSchema = new mongoose.Schema({
     email: {
         type: String,
         required: true,
-        unique:true
+        unique: true
     },
     phone: {
         type: Number,
         required: true,
-        unique:true
+        unique: true
     },
     password: {
         type: String,
         required: true,
-        // unique:true
     },
     address: {
         type: String,
@@ -28,4 +27,4 @@ const UsersSchema = new mongoose.Schema({
 
 const Users = mongoose.model("Users", UsersSchema)
 
-module.exports = mongoose
+module.exports = Users

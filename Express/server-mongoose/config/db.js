@@ -1,11 +1,11 @@
 const mongoose = require('mongoose')
 
-mongoose.connect("mongodb+srv://rashmisri01:30012005@in-aws.b9ta7.mongodb.net/Max-Store?retryWrites=true&w=majority&appName=In-AWS")
+mongoose.connect("mongodb+srv://maxneodev:1811321@in-aws.6mvyl.mongodb.net/max-store?retryWrites=true&w=majority&appName=In-AWS")
 
 const connection = mongoose.connection;
 
 connection.on('connected', () => (console.log("DB Connected")))
-connection.on('error', (error) => (console.log("DB Error"  + error)))
+connection.on('error', () => (console.log("DB Error")))
 
 module.exports = mongoose
 
