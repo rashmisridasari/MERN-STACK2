@@ -10,7 +10,20 @@ const AdminLeftBar = () => {
     {
       title: 'Products',
       path: '/admin/products'
+    },
+    {
+      title: 'Orders',
+      path: '/admin/orders'
+    },
+    {
+      title: 'Users',
+      path: '/admin/users'
+    },
+    {
+       title: 'Settings',
+      path: '/admin/settings'
     }
+
   ]
   return (
     <div className='w-full h-screen shadow-purple-400 shadow-md flex justify-center items-center'>
