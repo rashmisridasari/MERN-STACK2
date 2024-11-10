@@ -20,10 +20,9 @@ const AdminLeftBar = () => {
       path: '/admin/users'
     },
     {
-       title: 'Settings',
+      title: 'Settings',
       path: '/admin/settings'
     }
-
   ]
   return (
     <div className='w-full h-screen shadow-purple-400 shadow-md flex justify-center items-center'>
@@ -33,7 +32,7 @@ const AdminLeftBar = () => {
         </div>
         <div className='h-[80%] w-full flex flex-col items-center '>
           {Linksdata.map((link, index) => (
-            <NavLink to={link.path} key={index} className='h-[10%] w-full px-8 hover:bg-purple-500/90 hover:text-white flex justify-start items-center rounded-sm shadow-md'>
+            <NavLink to={link.path} key={index} className='h-[10%] w-full px-8 hover:bg-purple-500/90 hover:text-white flex justify-start items-center rounded-sm shadow-md font-bold'>
               {link.title}
             </NavLink>
           ))
