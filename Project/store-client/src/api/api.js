@@ -2,10 +2,18 @@
 import axios from 'axios'
 
 
-const API = 'http://localhost:3000/products/all'
+const API = 'http://localhost:3000'
+
+// Product Endpoints
+
+const getProducts = () => axios.get(`${API}/products/all`)
 
 
-const getProducts = () => axios.get(API)
+// Order Endpoints
+const getOrders = () => axios.get(`${API}/orders/all`)
 
 
-export { getProducts }
+// User Endpoints
+const getUsers = () => axios.get(`${API}/users/all`)
+
+export { getProducts, getOrders , getUsers }
