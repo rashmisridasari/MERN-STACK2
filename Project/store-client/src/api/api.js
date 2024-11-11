@@ -4,16 +4,20 @@ import axios from 'axios'
 
 const API = 'http://localhost:3000'
 
-// Product Endpoints
-
+// ProductEndPonts
 const getProducts = () => axios.get(`${API}/products/all`)
 
 
-// Order Endpoints
+
+
+// OrderEndPonts
 const getOrders = () => axios.get(`${API}/orders/all`)
 
 
-// User Endpoints
+//UserEndPoints
 const getUsers = () => axios.get(`${API}/users/all`)
 
-export { getProducts, getOrders , getUsers }
+//AuthEndponts
+const Login = (data) => axios.post(`${API}/auth/login`, data)
+
+export { getProducts, getOrders, getUsers, Login }
